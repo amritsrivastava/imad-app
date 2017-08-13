@@ -22,11 +22,11 @@ body {
 
  .editing
  {
-                      max-width: 800px;
-                        margin: 0 auto;
-                        color: #E91E63;
-                        font-family: sans-serif;
-                        padding-top: 60px;
-                        padding-left: 20px;
-                        padding-right: 20px;
-                    }
+    max-width: 800px;
+    margin: 0 auto;
+    color: #E91E63;
+    font-family: sans-serif;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
