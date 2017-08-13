@@ -13,13 +13,13 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 app.get('/article-one',function(req, res){
-res.sendFie("This is the article one");    
+res.send('This is the article one');    
 });
 app.get('/article-two',function(req, res){
-res.sendFie("This is the article two");    
+res.send('This is the article two');    
 });
 app.get('/article-three',function(req, res){
-res.sendFie("This is the article three");    
+res.send('This is the article three');    
 });
 
 app.get('/ui/madi.png', function (req, res) {
@@ -30,7 +30,7 @@ app.get('/ui/madi.png', function (req, res) {
 // Do not change port, otherwise your app won't run on IMAD servers
 // Use 8080 only for local development if you already have apache running on 80
 
-var port = 80;
+var port = 8080;
 app.listen(port, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
