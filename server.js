@@ -11,35 +11,35 @@ var articleOne = {
 title: 'article one - Amrit Srivastava ',
 heading: 'Article one ',
 date: 'Aug 13,2017',
-content: 
+content:
                     `<p>
-                            This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. 
+                            This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
                     </p>
                     <p>
-                            This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. 
+                            This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
                     </p>
                     <p>
-                            This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. 
-                    </p>  `   
-    
+                            This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
+                    </p>  `
+
 };
 var articleTwo = {
 title: 'article two - Amrit Srivastava ',
 heading: 'Article two ',
 date: 'Aug 13,2017',
-content: 
+content:
                 `<p>
                        This is my second article.
-                </p>        `   
+                </p>        `
 };
 var articleThree = {
     title: 'article three - Amrit Srivastava ',
 heading: 'Article three ',
 date: 'Aug 13,2017',
-content: 
+content:
                 `<p>
                        This is my third article.
-                </p>        `   
+                </p>        `
 };
 
 function createTamplate(data){
@@ -54,22 +54,22 @@ var htmlTamplate = `
     <head>
             <title>
                      ${title}
-            </title>        
-                <meta name="viewport" content="width=device-width, initial-scal=1">            
+            </title>
+                <meta name="viewport" content="width=device-width, initial-scal=1">
                 <link href="/ui/style.css" rel="stylesheet"/>
     </head>
     <body>
         <div class="editing">
-        <div>     
+        <div>
                 <a href="/">Home</a>
             </div>
             <hr>
-            <h3>${heading} </h3> 
+            <h3>${heading} </h3>
             <div>
                  ${date}
             </div>
             ${content}
-                
+
             </div>
         </div>
     </body>
@@ -104,7 +104,7 @@ app.get('/ui/madi.png', function (req, res) {
 // Do not change port, otherwise your app won't run on IMAD servers
 // Use 8080 only for local development if you already have apache running on 80
 
-var port = 80;
+var port = 8080;
 app.listen(port, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
